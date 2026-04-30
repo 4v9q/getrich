@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  background: #000;
+  color: #fff;
+  font-family: monospace;
+
+  display: flex;
+  justify-content: center;
+
+  /* GRID BACKGROUND */
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+}
+
+/* MAIN */
+main {
+  width: 100%;
+  max-width: 1100px;
+  padding: 6rem 2rem;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  margin-bottom: 6rem;
+}
+
+.hero-text {
+  text-align: left;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  color: #888;
+  margin-top: 0.5rem;
+}
+
+/* IMAGE */
+.avatar {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+/* ABOUT */
+.about p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #ccc;
+  max-width: 800px;
+}
+
+/* SECTIONS */
+section {
+  margin-bottom: 6rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+
+  font-size: 0.85rem;
+
+  transition: all 0.3s ease;
+}
+
+.skill img {
+  width: 16px;
+  height: 16px;
+  transition: all 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.skill:hover img {
+  transform: scale(1.2);
+}
+
+.Projects {
+   text-align: left;
+}
+
+.Project1 {
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 12px;
+    max-width: 600px;
+    padding: 1.3rem;
+    transition: 0.3s ease;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.Project1:hover {
+    transform: translateY(-4px) scale(1.05);
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.Project1 h3 {
+    margin-bottom: 1rem;
+}
+
+/* CONTACT */
+.contact {
+  text-align: left;
+}
+
+.contact-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.6rem;
+}
+
+/* CONTACT BUTTON (same as skill) */
+.contact-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+
+  font-size: 0.85rem;
+  color: white;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.contact-icon img {
+  width: 16px;
+  height: 16px;
+  filter: invert(1);
+  transition: all 0.3s ease;
+}
+
+.contact-icon:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.contact-icon:hover img {
+  transform: scale(1.2);
+}
+
+
